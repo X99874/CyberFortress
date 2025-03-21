@@ -122,11 +122,17 @@ For urgent or critical security matters, contact the following individual direct
   Phone: ****
 
 ## Security Testing Rules
+CyberFortress Security Testing Rules
 
-Security testing on this project must follow these rules:
-1. **Do not perform tests on the production environment.** Use the designated staging environment or forks of the project.
-2. **Use authorized tools and frameworks** for testing. Unauthorized tools may result in IP bans.
-3. **Do not disrupt the project’s operations or user data.** Intentional harm is not tolerated and may result in legal actions.
+## General Rules
+Do Not Perform Tests in the Production EnvironmentAlways use the designated staging environment or forks of the project for security testing. Production environments should never be used for security testing to avoid disrupting real users or operations.
+Use Authorized Testing Tools and FrameworksOnly use authorized and officially approved tools for security testing. Unauthorized or third-party tools can trigger IP bans or compromise the integrity of the system.
+Do Not Disrupt Operations or User DataEnsure that your security tests do not interfere with the normal operations of the project, especially regarding user data. Any malicious or harmful activities are strictly prohibited and will lead to legal actions.
+## Additional Considerations
+Testing Process IntegritySecurity tests should always be planned, scheduled, and communicated to relevant teams. Unauthorized testing or unscheduled activities can cause issues for the platform’s security.
+Reporting VulnerabilitiesIf a vulnerability is found, it should be reported immediately to the security team through the proper channels. Public disclosure of any vulnerability before resolution is strictly prohibited.
+Scope of TestingOnly test the parts of the system explicitly authorized by the project security policies. Do not attempt to breach or test areas outside the agreed scope.
+By following these security test rules, CyberFortress ensures the integrity of the platform and the safety of its users while minimizing the risk of data breaches and other security incidents.
 
 ## Penalties for Violations
 Any attempt to violate the terms of this policy or to intentionally compromise the project’s security will result in:
