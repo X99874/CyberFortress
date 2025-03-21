@@ -73,7 +73,7 @@ If you discover a security vulnerability in this project, please follow these st
     - Any potential fixes or workarounds.
 4. If the issue is critical, mark the email as "URGENT."
 
-We aim to respond to all security issues within **48 hours** and resolve critical vulnerabilities within **7 days** of confirmation.
+We aim to respond to all security issues within **12 hours** and resolve critical vulnerabilities within **7 days** of confirmation.
 
 ## Responsible Disclosure Policy
 
