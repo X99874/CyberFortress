@@ -63,3 +63,5 @@ To contribute, create a `fork` and submit a pull request.
 This project is licensed under the Apache-2.0 License. For more details, see the `LICENSE` file.
 ----------------------------------------
 If you have any issues or suggestions, feel free to contact us!
+
+![Logo](CyberFortress.png)
