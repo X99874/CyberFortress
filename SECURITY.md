@@ -1,7 +1,7 @@
 # CyberFortress Security Guide
 ----------------------------------------
 ## About the Project
-CyberFortress is a platform with high security requirements. This project is only accessible to authorized users, authorities, and system administrators. Security is paramount, and this project ensures the protection of all system components at the highest level. Strict security measures are applied for platform access, with thorough validation at every step.
+### CyberFortress is a platform with high security requirements. This project is only accessible to authorized users, authorities, and system administrators. Security is paramount, and this project ensures the protection of all system components at the highest level. Strict security measures are applied for platform access, with thorough validation at every step.
 ----------------------------------------
 Security Policies
 1. Access Control and Authentication:
