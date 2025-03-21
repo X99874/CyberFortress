@@ -128,6 +128,7 @@ CyberFortress Security Testing Rules
 Do Not Perform Tests in the Production EnvironmentAlways use the designated staging environment or forks of the project for security testing. Production environments should never be used for security testing to avoid disrupting real users or operations.
 Use Authorized Testing Tools and FrameworksOnly use authorized and officially approved tools for security testing. Unauthorized or third-party tools can trigger IP bans or compromise the integrity of the system.
 Do Not Disrupt Operations or User DataEnsure that your security tests do not interfere with the normal operations of the project, especially regarding user data. Any malicious or harmful activities are strictly prohibited and will lead to legal actions.
+
 ## Additional Considerations
 Testing Process IntegritySecurity tests should always be planned, scheduled, and communicated to relevant teams. Unauthorized testing or unscheduled activities can cause issues for the platform’s security.
 Reporting VulnerabilitiesIf a vulnerability is found, it should be reported immediately to the security team through the proper channels. Public disclosure of any vulnerability before resolution is strictly prohibited.
