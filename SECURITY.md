@@ -1,65 +1,95 @@
-# CyberFortress Security Guide
+# **GitHub Security Guide - CyberFortress**
 ----------------------------------------
-## About the Project
-### CyberFortress is a platform with high security requirements. This project is only accessible to authorized users, authorities, and system administrators. Security is paramount, and this project ensures the protection of all system components at the highest level. Strict security measures are applied for platform access, with thorough validation at every step.
+## **Project Overview**
+CyberFortress is a platform with high-security requirements. GitHub plays a critical role in our development pipeline, and its security must be maintained at the highest level. This guide outlines the security measures required to ensure that all activities within GitHub repositories are performed securely.
 ----------------------------------------
-Security Policies
-1. Access Control and Authentication:
-Content Access: To perform any action on the platform, restrictions will be applied based on the user’s role and authorization level. Access will be granted only to authorized personnel.
+## **Security Policies**
 ----------------------------------------
-Authentication:
-3FA (Three-Factor Authentication): Authentication will consist of:
-Password: Username and password combination, requiring a minimum of 40 characters and a complex character set.
-Biometric Data: Biometric authentication methods such as fingerprint or facial recognition, depending on the device and environment.
-Hardware-Based Token: The user will authenticate with a security key (USB security key or hardware-based authenticator) attached to the device.
-Time-Based Access Restrictions: The system will apply time-based access restrictions, meaning user access will only be active during specific time windows, and access rights will be automatically disabled outside those times.
-
-Administrator Access: Admin accounts will only be accessible with multi-layered security measures, requiring secure device login for further protection.
+### **Access Control and Authentication**
 ----------------------------------------
-2. Password Policy:
-Password Length: All users and system administrators must have passwords that are a minimum of 40 characters long. Longer passwords are recommended for extra security. Password complexity is also strictly monitored.
-
-Password Character Set: Passwords must include the following character types:
-Uppercase letters (A-Z)
-Lowercase letters (a-z)
-Numbers (0-9)
-Special characters (e.g., !@#$%^&*()_+-=[]{}|;:'",.<>?/~)
-Whitespace characters are also required.
-
-Password Changes: Passwords must be changed every 30 days. Users cannot reuse any of their previous 10 passwords. Password changes will be automatically tracked with password validity durations and security requirements.
-
-Password Storage: Passwords will never be stored as plain text. All passwords will be stored using the strongest encryption algorithms (e.g., bcrypt, Argon2, scrypt) with salts and hashing methods to ensure security.
-
-Password Violation Detection: If a password violation is detected, users will be notified immediately, and they will be required to reset their passwords.
+#### **Role-Based Access Control (RBAC)**
+- Users will be granted access to repositories based on their roles. For instance, developers, administrators, and contributors will have different levels of access to repositories.
+- Repositories will be secured to ensure that only authorized personnel can access specific areas of the project.
 ----------------------------------------
-3. Data Security
-Data Encryption:
-All data will be protected using AES-256 bit encryption during both storage and transmission.
-Encryption keys will be rotated at regular intervals and stored securely.
-
-Data Backup:
-Daily backups will be stored encrypted and will only be accessible by authorized users.
-Backup data will be kept in offline and offsite storage environments for extra security.
-
-Data Deletion and Destruction:
-Data deletion will be conducted according to privacy and legal requirements. Any user data or log entries can only be deleted with approval from legal authorities.
-Data deletion will be performed using data destruction protocols, ensuring compliance with privacy standards.
-Data Anonymization: User data will be anonymized, and personally identifiable information will be retained only when legally required.
+#### **Authentication**
+- **Multi-Factor Authentication (MFA):** All users must enable two-factor authentication (2FA), ensuring that even if login credentials are compromised, access remains protected.
+- **GitHub Security Keys:** For sensitive operations (e.g., pushing code to critical repositories), users must authenticate using security keys (hardware-based authenticators or GitHub-supported security tokens).
 ----------------------------------------
-4. Network Security
-Encryption Protocols: All network communication within the platform will be secured using SSL/TLS encryption protocols.
-VPN Usage: All traffic for employees, system administrators, and authorized users will be routed through a secure VPN (Virtual Private Network).
-Advanced Network Monitoring: Network activities will be monitored and analyzed 24/7 by a centralized monitoring system. Anomaly detection techniques will be used, incorporating AI and machine learning.
-Internal and External Firewalls: The platform will be protected with advanced firewalls and IDS/IPS (Intrusion Detection/Prevention Systems), allowing access only from specific IP addresses and ports.
-DDoS Protection: The platform will be protected against Distributed Denial-of-Service (DDoS) attacks. Advanced security services will monitor incoming traffic and block suspicious activities in real time.
+### **Password and Account Security**
 ----------------------------------------
-5. Network Monitoring and Security Firewalls
-Advanced Monitoring Systems: All network activities will be monitored by security experts, with any unusual activity detected and immediately addressed.
-Firewall and Intrusion Detection Systems: Both internal and external systems will be protected with advanced IDS/IPS tools. Any attack attempts will be immediately blocked and the relevant personnel will be notified.
-Access Control and Identity Management
-Role-Based Access Control (RBAC): Users will be assigned specific roles based on their responsibilities, and all actions within the platform will be controlled based on security and confidentiality requirements.
-Time-Based Access Control: User access rights will be active only during specific hours. For instance, access will only be allowed during working hours.
-Two-Factor Authentication (2FA): Users will be required to use both a secure password and an additional authentication method, such as OTP (One-Time Password) or authentication applications for extra security.
+#### **Password Policy**
+- Minimum password length: 40 characters with complexity requirements (uppercase, lowercase, numbers, and special characters).
+- **Password Rotation:** Passwords must be updated every 30 days. Users are restricted from reusing the last 10 passwords.
+----------------------------------------
+#### **Password Storage**
+- GitHub does not store passwords in plain text. All passwords are securely stored using strong encryption algorithms.
+----------------------------------------
+#### **Password Violation Detection**
+- Users will be immediately notified if a password violation is detected and will be prompted to reset their passwords.
+----------------------------------------
+### **Repository and Code Security**
+----------------------------------------
+#### **Code Reviews and Branch Protection**
+- Every push and pull request must be reviewed and approved by designated team members before merging into main branches.
+- **Branch Protection Rules:** Critical branches (e.g., `main`, `production`) are protected from direct pushes, and code can only be merged via pull requests.
+----------------------------------------
+#### **Code Scanning and Security Alerts**
+- GitHub’s built-in security tools (CodeQL, Dependabot, etc.) automatically scan for vulnerabilities and send security alerts regarding dependencies and code quality.
+----------------------------------------
+#### **Commit Signing**
+- Developers are required to sign commits using GPG (GNU Privacy Guard) keys to ensure the integrity and authenticity of code contributions.
+----------------------------------------
+### **Data Security**
+----------------------------------------
+#### **Encryption**
+- All sensitive data in repositories (e.g., environment variables, API keys) will be encrypted using AES-256 or other strong encryption standards.
+- **Secret Scanning:** GitHub includes secret scanning capabilities to detect sensitive information, such as API keys or passwords, within commits.
+----------------------------------------
+#### **Data Backup and Storage**
+- GitHub provides encrypted backups of repositories and other relevant data. These backups are accessible only by authorized personnel.
+----------------------------------------
+#### **Data Deletion and Destruction**
+- Repositories or any sensitive data can only be deleted with approval from legal authorities. Data deletion follows privacy and compliance standards.
+----------------------------------------
+### **Network Security**
+----------------------------------------
+#### **SSH Key Authentication**
+- Users and administrators must authenticate using SSH keys to access GitHub repositories. Password-based access is disabled to ensure higher security for actions like pushing or pulling code.
+----------------------------------------
+#### **Network Traffic Encryption**
+- All interactions with GitHub repositories are secured with HTTPS/SSL encryption to protect data in transit.
+----------------------------------------
+### **Access Control and Identity Management**
+----------------------------------------
+#### **Two-Factor Authentication (2FA)**
+- Users must enable 2FA on their GitHub accounts to perform actions such as pushing code or changing repository settings. 2FA requires both a secure password and an additional authentication method (e.g., OTP or authentication apps).
+----------------------------------------
+#### **Time-Based Access Control**
+- Sensitive GitHub repository actions are restricted to specific hours, preventing unauthorized access outside of working hours.
+----------------------------------------
+### **Administrator Access**
+----------------------------------------
+#### **Admin Access Protection**
+- Admin accounts must be protected by multi-layered security measures, including requiring secure device login and 2FA for critical operations (e.g., merging code or changing repository settings).
+----------------------------------------
+### **Monitoring and Incident Response**
+----------------------------------------
+#### **Audit Logs**
+- GitHub’s audit logs track all user activities within repositories, including code changes, access logs, and security alerts. Administrators monitor these logs for suspicious activities.
+----------------------------------------
+#### **Intrusion Detection**
+- Any suspicious or malicious activity is detected in real time, and relevant security teams are notified to address the issue immediately.
+----------------------------------------
+### **Compliance and Legal Requirements**
+----------------------------------------
+#### **Data Anonymization**
+- Personal data will only be retained when legally required. Any data that isn’t legally necessary will be anonymized.
+----------------------------------------
+#### **Legal Compliance**
+- All data management and repository activities comply with relevant privacy laws (e.g., GDPR, CCPA), and regular security audits are performed to ensure compliance.
+----------------------------------------
+## **Conclusion**
+CyberFortress has implemented comprehensive security measures for all GitHub repositories to ensure that code, data, and user interactions remain secure. These policies, combined with GitHub's inherent security tools and regular audits, provide a robust framework for maintaining the integrity and confidentiality of the CyberFortress project.
 ----------------------------------------
 ## Reporting a Vulnerability
 
