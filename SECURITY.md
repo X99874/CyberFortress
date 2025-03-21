@@ -61,46 +61,52 @@ Role-Based Access Control (RBAC): Users will be assigned specific roles based on
 Time-Based Access Control: User access rights will be active only during specific hours. For instance, access will only be allowed during working hours.
 Two-Factor Authentication (2FA): Users will be required to use both a secure password and an additional authentication method, such as OTP (One-Time Password) or authentication applications for extra security.
 ----------------------------------------
-Reporting a Vulnerability
+## Reporting a Vulnerability
+
 If you discover a security vulnerability in this project, please follow these strict steps:
 
-DO NOT publicly disclose the vulnerability. Any public sharing of vulnerabilities without following the reporting process will result in a ban from contributing to this project.
-Send an email to **** with the subject line: [SECURITY ISSUE].
-Provide detailed information about the vulnerability, including:
-Steps to reproduce the issue.
-Potential impact on the system.
-Any potential fixes or workarounds.
-If the issue is critical, mark the email as "URGENT."
-We aim to respond to all security issues within 48 hours and resolve critical vulnerabilities within 7 days of confirmation.
+1. **DO NOT** publicly disclose the vulnerability. Any public sharing of vulnerabilities without following the reporting process will result in a ban from contributing to this project.
+2. Send an email to **** with the subject line: `[SECURITY ISSUE]`.
+3. Provide detailed information about the vulnerability, including:
+    - Steps to reproduce the issue.
+    - Potential impact on the system.
+    - Any potential fixes or workarounds.
+4. If the issue is critical, mark the email as "URGENT."
 
-Responsible Disclosure Policy
+We aim to respond to all security issues within **48 hours** and resolve critical vulnerabilities within **7 days** of confirmation.
+
+## Responsible Disclosure Policy
+
 We encourage responsible disclosure of vulnerabilities. Please adhere to the following guidelines:
+- **Do not exploit the vulnerability**. Exploiting discovered vulnerabilities is strictly prohibited.
+- Provide the development team adequate time to address the issue before making any public statements.
+- Collaborate with the team during the fix implementation phase.
 
-Do not exploit the vulnerability. Exploiting discovered vulnerabilities is strictly prohibited.
-Provide the development team adequate time to address the issue before making any public statements.
-Collaborate with the team during the fix implementation phase.
 Failure to follow these guidelines may result in legal actions depending on the nature and severity of the breach.
 
-Security Contact
+## Security Contact
 For urgent or critical security matters, contact the following individual directly:
+- **X99874**  
+  Security Lead  
+  Email: ****  
+  Phone: ****
 
-X99874
-Security Lead
-Email: ****
-Phone: ****
-Security Testing Rules
+## Security Testing Rules
+
 Security testing on this project must follow these rules:
+1. **Do not perform tests on the production environment.** Use the designated staging environment or forks of the project.
+2. **Use authorized tools and frameworks** for testing. Unauthorized tools may result in IP bans.
+3. **Do not disrupt the project’s operations or user data.** Intentional harm is not tolerated and may result in legal actions.
 
-Do not perform tests on the production environment. Use the designated staging environment or forks of the project.
-Use authorized tools and frameworks for testing. Unauthorized tools may result in IP bans.
-Do not disrupt the project’s operations or user data. Intentional harm is not tolerated and may result in legal actions.
-Penalties for Violations
+## Penalties for Violations
 Any attempt to violate the terms of this policy or to intentionally compromise the project’s security will result in:
+- **Immediate ban from this repository**.
+- **Notification of relevant authorities** if laws are violated.
+- **Permanent disqualification** from contributing to this or any related projects.
 
-Immediate ban from this repository.
-Notification of relevant authorities if laws are violated.
-Permanent disqualification from contributing to this or any related projects.
-Acknowledgments
-We are grateful to the security researchers and ethical hackers who help keep this project safe. If you responsibly disclose a vulnerability, you may be publicly acknowledged in our Security Hall of Fame.
+## Acknowledgments
+We are grateful to the security researchers and ethical hackers who help keep this project safe. If you responsibly disclose a vulnerability, you may be publicly acknowledged in our [Security Hall of Fame](link-to-security-hall-of-fame).
 
-This security policy is subject to updates and revisions. Please review it regularly.
+---
+
+*This security policy is subject to updates and revisions. Please review it regularly.*
