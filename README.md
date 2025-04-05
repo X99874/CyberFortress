@@ -64,6 +64,4 @@ This project is licensed under the Apache-2.0 License. For more details, see the
 ----------------------------------------
 If you have any issues or suggestions, feel free to contact us!
 ----------------------------------------
-# Language written in this project is Python
-----------------------------------------
 ![Logo](CyberFortress.png)
