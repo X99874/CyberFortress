@@ -45,7 +45,7 @@ git clone https://github.com/X99874/CyberFortress.git
 cd CyberFortress
 pip install -r requirements.txt
 python main.py --target 192.168.1.1 --scan all
-
+```
 📸 (Optional) Screenshots
 Insert here terminal output, scan results, or simple GUI if you build one later
 
