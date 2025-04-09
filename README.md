@@ -59,10 +59,10 @@ Insert here terminal output, scan results, or simple GUI if you build one later
 Feel free to fork, star, and create pull requests.
 This tool is open-source, and any contribution is welcome!
 
+## 🚧 This project is actively maintained and under ongoing development.
+
 ## 📄 License
 MIT License. Use it freely and ethically.
-
-## 🚧 This project is actively maintained and under ongoing development.
 
 ## 🔹 Standard Professional Version
 - CyberFortress — Designed for learning. Built for action. Defend, Detect, Discover.
