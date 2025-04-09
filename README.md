@@ -61,3 +61,6 @@ This tool is open-source, and any contribution is welcome!
 
 ## 📄 License
 MIT License. Use it freely and ethically.
+
+🔹 Standart Profesyonel Versiyon
+CyberFortress — Designed for learning. Built for action. Defend, Detect, Discover.
