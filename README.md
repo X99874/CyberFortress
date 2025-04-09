@@ -62,6 +62,8 @@ This tool is open-source, and any contribution is welcome!
 ## 📄 License
 MIT License. Use it freely and ethically.
 
+## 🚧 This project is actively maintained and under ongoing development.
+
 ## 🔹 Standard Professional Version
 - CyberFortress — Designed for learning. Built for action. Defend, Detect, Discover.
 
