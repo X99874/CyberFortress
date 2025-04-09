@@ -64,3 +64,4 @@ MIT License. Use it freely and ethically.
 
 ## 🔹 Standard Professional Version
 - CyberFortress — Designed for learning. Built for action. Defend, Detect, Discover.
+![Logo](CyberFortressLogo.png)
