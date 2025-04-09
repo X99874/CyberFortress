@@ -45,3 +45,22 @@ git clone https://github.com/X99874/CyberFortress.git
 cd CyberFortress
 pip install -r requirements.txt
 python main.py --target 192.168.1.1 --scan all
+
+📸 (Optional) Screenshots
+Insert here terminal output, scan results, or simple GUI if you build one later
+
+🛣️ Roadmap Ideas (Next Features)
+ Web Vulnerability Modules (XSS, SQLi, LFI)
+
+ VirusTotal or IP reputation checker (API-based)
+
+ HTML or PDF report generation
+
+ Optional Flask dashboard for visual interaction
+
+🤝 Contributing
+Feel free to fork, star, and create pull requests.
+This tool is open-source, and any contribution is welcome!
+
+📄 License
+MIT License. Use it freely and ethically.
