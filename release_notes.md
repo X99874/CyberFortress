@@ -1,5 +1,5 @@
 - 🛡️ CyberFortress v1.0.0 – Coming...
-- 📅 Release Date: April 15, 2025 (planned)
+- 📅 Release Date: May 20, 2025 (planned)
 - 🔖 Version: v1.0.0 – First Stable Release
 
 - 🚧 Improved Features
